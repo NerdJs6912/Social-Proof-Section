@@ -44,7 +44,20 @@ body {
 
 .col2 {
   grid-area: col2;
-  /* background: green; */
+  display: flex;
+}
+li {
+  margin-bottom: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  background: hsl(300, 24%, 96%);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+li img {
+  width: 8px;
 }
 
 li {
@@ -56,6 +69,10 @@ li {
   padding: 25px;
   border-radius: 10px;
   background: hsl(300, 43%, 22%);
+}
+
+.col p {
+  margin: 5px;
 }
 
 .column {
@@ -70,17 +87,19 @@ li {
   border-radius: 20px;
 }
 
+.column span {
+  font-size: 11px;
+  color: hsl(333, 80%, 67%);
+}
+
 .item1 {
   grid-area: item1;
-  /* background: purple; */
 }
 
 .item2 {
   grid-area: item2;
-  /* background: red; */
 }
 
 .item3 {
   grid-area: item3;
-  /* background: blue; */
 }
