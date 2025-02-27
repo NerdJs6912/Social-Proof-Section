@@ -22,10 +22,10 @@ body {
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(2,1fr);
   grid-template-areas: 
-  "   col1      coll        col2      col2    "
+  "   col1      col2        col2      col2    "
   "   item1     item2       item3     .       "
   ;
-  gap: 10px;
+  gap: 15px;
 }
 
 .col1 {
@@ -43,36 +43,64 @@ body {
 }
 
 .col2 {
+  width: 00px;
   grid-area: col2;
   display: flex;
+  gap: 10px;
+  flex-direction: column;
+  z-index: 2;
 }
-li {
-  margin-bottom: 20px;
-  font-size: 10px;
-  font-weight: 700;
+
+.col2 P {
   color: hsl(300, 43%, 22%);
-  background: hsl(300, 24%, 96%);
-  padding: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  background-color: hsla(333, 93%, 72%, 0.068);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 20px;
+  width: 230px;
   border-radius: 5px;
 }
 
-li img {
-  width: 8px;
+.container p {
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: 20px;
 }
 
-li {
-  list-style: none;
+.containerImage {
+  display: flex;
+  gap: 5px;
+}
+
+.containerImage img {
+  width: 9px;
+}
+
+.guru {
+  margin-left: 20px;
+}
+
+.tech {
+  margin-left: 55px;
 }
 
 .col {
   color: white;
-  padding: 25px;
-  border-radius: 10px;
+  width: 270px;
+  padding: 20px;
+  border-radius: 5px;
   background: hsl(300, 43%, 22%);
 }
 
 .col p {
-  margin: 5px;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .column {
@@ -94,12 +122,18 @@ li {
 
 .item1 {
   grid-area: item1;
+  margin-top: 5px;
+  height: 180px;
 }
 
 .item2 {
   grid-area: item2;
+  margin-top: 15px;
+  height: 185px;
 }
 
 .item3 {
   grid-area: item3;
+  margin-top: 20px;
+  height: 190px;
 }
